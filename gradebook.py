@@ -1,7 +1,7 @@
 student = { 
     "Name": 'Michael Lee',
     "Class": '27F',
-    "Grades": []
+    "Grades": ['100']
 def avg(): 
 
 }
