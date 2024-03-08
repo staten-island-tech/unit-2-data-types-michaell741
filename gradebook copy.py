@@ -26,6 +26,7 @@ def Grade():
     print(avg)
 
 Create_new_student = {
-                        'Name'
+                        'Name'= (input("Enter Student's Name"))
+                        'Class'= (input("Enter Student's Class"))
 }
 
