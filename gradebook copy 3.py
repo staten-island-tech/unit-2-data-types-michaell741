@@ -3,11 +3,7 @@ student = {
     "Class": '27F',
     "Grade": [100, 99, 85]
 }
-studentlist = student['Name']
-def students():
-    students = (input("Enter Student's Name"))
-    studentlist.append(students)
-    students = (input("Enter Student's Class"))
+
 
 gradelist = student['Grade']
 def Grade():

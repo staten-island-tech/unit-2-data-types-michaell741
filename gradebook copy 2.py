@@ -1,9 +1,9 @@
 student = { 
     "Name": 'Michael Lee',
     "Class": '27F',
-    "Grade": [100, 99, 85]
+    "Grade": []
 }
-studentlist = student['Name']
+studentlist = student['name']
 def students():
     students = (input("Enter Student's Name"))
     studentlist.append(students)
@@ -24,4 +24,6 @@ def Grade():
     gradetotal = sum(student['Grade'])
     avg = gradetotal/length
     print(avg)
+
+}
 
