@@ -1,3 +1,4 @@
 createstudent = "y"
 while createstudent == "Y":
-    name
+    name = (input( "what is your name"))
+    
