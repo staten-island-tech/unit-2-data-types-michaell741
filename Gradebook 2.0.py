@@ -12,7 +12,24 @@ while createmorestudents == "Yes":
     studentname = (input("Enter Student's Name"))
     studentclass = (input("Enter Student's class"))
     studentgrades = [int(i) for i in input("Enter Student's class")]
-    newstudent = createmorestudents(studentname, studentclass, )
+    newstudent = createmorestudents(studentname, studentclass, studentgrades)
+    students.append (newstudent)
+    print(students)
+    for student in students:
+        print(student)
+    createmorestudents = (input("Want to create more students? Y/N"))
+
+    if createmorestudents == "Y":
+        createmorestudents()
+
+
+    
+
+     
+
+
+    
+
 
 
 
