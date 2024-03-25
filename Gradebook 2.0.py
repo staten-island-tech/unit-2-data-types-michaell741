@@ -1,6 +1,6 @@
 students = []
 
-def avg(grades):
+def avg(studentgrades):
     return (studentgrades)/len(studentgrades)
 def createstudent(name, classroom, grades):
     avg = avg(grades)
@@ -11,9 +11,7 @@ createmorestudents = "Yes"
 while createmorestudents == "Yes":
     studentname = (input("Enter Student's Name"))
     studentclass = (input("Enter Student's class"))
-    studentgrades = [int(i) for i in input("Enter Student's Grades")]
-    studentGPA = avg
-    print(studentGPA)
+    studentgrades = int(input('what is your grade?')) 
     newstudent = createmorestudents(studentname, studentclass, studentgrades)
     students.append (newstudent)
     print(students)
