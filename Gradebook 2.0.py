@@ -1,26 +1,29 @@
-students = []
-
-def avg(studentgrades):
-    return (studentgrades)/len(studentgrades)
+studentlist = []
+gradelist = [] 
+def avg():
+    return sum(gradelist)/len(gradelist)
 def createstudent(name, classroom, grades):
-    avg = avg(grades)
-    return {"Name": name, "classroom": classroom, "Grades":grades, "Student Average": avg}
+    gpa = avg()
+    return {"Name": name, "classroom": classroom, "Grades":grades, "Student Average": gpa}
 
 
-createmorestudents = "Yes"
-while createmorestudents == "Yes":
+createmorestudents = "Y"
+while createmorestudents == "Y":
     studentname = (input("Enter Student's Name"))
     studentclass = (input("Enter Student's class"))
     studentgrades = int(input('what is your grade?')) 
-    newstudent = createmorestudents(studentname, studentclass, studentgrades)
-    students.append (newstudent)
-    print(students)
-    for student in students:
+    gradelist.append(studentgrades)
+    newstudent = createstudent(studentname, studentclass, studentgrades)
+    studentlist.append (newstudent)
+    print(studentlist)
+    for student in studentlist:
         print(student)
+        break
     createmorestudents = (input("Want to create more students? Y/N"))
-
-    if createmorestudents == "Y":
-        createmorestudents()
+  
+    if createmorestudents == "Y": 
+        gradelist = [] 
+        continue
 
 
     
