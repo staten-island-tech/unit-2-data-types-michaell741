@@ -25,5 +25,5 @@ def Grade():
     avg = gradetotal/length
     print(avg)
 
-}
+
 

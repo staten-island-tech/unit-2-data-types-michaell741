@@ -16,9 +16,6 @@ while createmorestudents == "Y":
     newstudent = createstudent(studentname, studentclass, studentgrades)
     studentlist.append (newstudent)
     print(studentlist)
-    for student in studentlist:
-        print(student)
-        break
     createmorestudents = (input("Want to create more students? Y/N"))
   
     if createmorestudents == "Y": 
@@ -32,7 +29,9 @@ while createmorestudents == "Y":
 
 
     
-
+for student in studentlist:
+        print(student)
+        break
 
 
 
