@@ -3,7 +3,7 @@ student = {
     "Class": '27F',
     "Grade": []
 }
-studentlist = student['name']
+studentlist = student['Name']
 def students():
     students = (input("Enter Student's Name"))
     studentlist.append(students)
